@@ -6,7 +6,7 @@
           {{ filters.find((item) => item.id === regionId).label }}
         </div>
         <div class="icon">
-          <img src="@/assets/down.svg" alt="" class="icon__img" />
+          <img src="@/assets/down.svg" alt="" class="icon__img svg-icon" />
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scope>
 .filter {
   width: 100%;
   max-width: 300px;
@@ -95,10 +95,10 @@ export default {
   color: var(--text-grey);
 }
 
-.icon__img {
+/* .icon__img {
   filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(38deg)
     brightness(104%) contrast(101%);
-}
+} */
 
 .option {
   background-color: var(--primary-color);

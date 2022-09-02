@@ -7,7 +7,7 @@
       @change="handleChange"
     />
     <div class="search__icon">
-      <img alt="Vue logo" class="logo" src="@/assets/search.svg" />
+      <img alt="Vue logo" class="logo svg-icon" src="@/assets/search.svg" />
     </div>
   </div>
 </template>
@@ -65,8 +65,6 @@ export default {
   left: 25px;
   top: 50%;
   transform: translateY(-50%);
-  filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(38deg)
-    brightness(104%) contrast(101%);
 }
 
 .search__icon img {

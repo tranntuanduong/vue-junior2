@@ -28,3 +28,11 @@ html, body {
 
   --box-shadow-color: #0000001a;
 }
+.dark .svg-icon {
+  filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(38deg)
+  brightness(104%) contrast(101%);
+}
+
+.light .svg-icon {
+  filter: invert(0%) sepia(95%) saturate(0%) hue-rotate(147deg) brightness(99%) contrast(107%);
+}

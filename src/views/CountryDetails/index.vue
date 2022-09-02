@@ -1,7 +1,7 @@
 <template>
   <Container>
     <router-link to="/" class="btn">
-      <img src="@/assets/back.svg" alt="" class="icon" />
+      <img src="@/assets/back.svg" alt="" class="icon svg-icon" />
       <div class="label">Back</div>
     </router-link>
     <div class="content">
@@ -103,8 +103,6 @@ export default {
 }
 
 .icon {
-  filter: invert(100%) sepia(29%) saturate(0%) hue-rotate(38deg)
-    brightness(104%) contrast(101%);
   width: 15px;
   object-fit: cover;
 }
