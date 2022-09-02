@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --bg-color: #fafafa;
+  --text-title: #38393b;
+  --text-color: #38393b;
+  --text-grey: #656565;
+
+  --box-shadow-color: #0000001a;
+}
+
+:root .dark {
+  --primary-color: #2b3743;
+  --bg-color: #202d36;
+  --text-title: #fcffff;
+  --text-color: #fcffff;
+  --text-grey: #c3c2c2;
+
+  --box-shadow-color: #0000001a;
+}
