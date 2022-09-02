@@ -14,11 +14,10 @@ export default {
 
 <style scope>
 .container {
-  max-width: 1280px;
-  width: 100%;
+  max-width: 1248px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 0;
+  padding: 30px 16px;
 }
 
 .mt-20 {

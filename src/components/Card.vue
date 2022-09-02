@@ -1,25 +1,25 @@
 <template>
-  <div class="card">
+  <router-link class="card" :to="`/${item.slug}/details`">
     <img :src="item.flag" alt="" class="flag" />
 
     <div class="content">
       <div class="title">{{ item.name }}</div>
       <div class="item">
         <div class="item__key">Population:</div>
-        <div class="item__value">81.770.880</div>
+        <div class="item__value">{{ item.population }}</div>
       </div>
 
       <div class="item">
         <div class="item__key">Region:</div>
-        <div class="item__value">Europe</div>
+        <div class="item__value">{{ item.region }}</div>
       </div>
 
       <div class="item">
         <div class="item__key">Capital:</div>
-        <div class="item__value">Berlin</div>
+        <div class="item__value">{{ item.capital }}</div>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -30,14 +30,15 @@ export default {
 };
 </script>
 
-<style scope>
+<style scoped>
 .card {
   width: 100%;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: var(--box-shadow-color) 0px 0.5rem 1rem 0px;
   font-size: 14px;
-  width: 290px;
+  width: 280px;
+  text-decoration: none;
 }
 
 .flag {

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__wrap">
-      <div class="left">Where in the world?</div>
+      <router-link class="left" to="/">Where in the world?</router-link>
       <div class="right" @click="$emit('toggleThemeMode')">
         <div class="icon">
           <span>{{ mode === "light" ? "🌙" : "🌞" }}</span>
@@ -20,9 +20,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .left {
   font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .right {
@@ -57,7 +59,7 @@ export default {
   max-width: 1280px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .header__left {

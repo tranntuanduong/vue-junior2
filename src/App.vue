@@ -1,6 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "./components/HelloWorld.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
@@ -18,10 +17,10 @@ export default {
   components: {
     Header,
   },
-  data () {
+  data() {
     return {
       mode: "dark",
-    }
+    };
   },
   methods: {
     toggleThemeMode() {
